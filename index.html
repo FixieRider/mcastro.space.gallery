@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Coates Photography</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    <div class="container">
+        <div class="nav">
+            <img src="/assets/MCAstroLogo.svg" alt="MCAstro Logo" class="mainlogo">
+            <br>
+            <h2>Navigation</h2>
+            <br>
+            <br>
+            <a href="/galleries/astro/index.html" target="contentFrame">Astrophotography</a>
+            <a href="/galleries//landscapes/index.html" target="contentFrame">Landscape Photography</a>
+            <a href="https://www.mikects.com" target="contentFrame">My Links</a>
+        </div>
+        <div class="content">
+            <iframe title="mainContent" name="contentFrame" src="/galleries/astro/index.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
